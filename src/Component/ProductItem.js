@@ -33,7 +33,7 @@ export default function ProductItem({ item }) {
       dispatchCart(addCart(item));
       dispatchTotal(CartItems());
       setaddedItem(false);
-      showToastMessage("item Added to cart", "success");
+      showToastMessage("item Added to cart", "successful");
     } else {
       navigate("/cart");
     }
@@ -59,7 +59,7 @@ export default function ProductItem({ item }) {
   }
   // making put request after click on save button of edit
   function handleSave(item) {
-    let url = `https://my-json-server.typicode.com/raunak234362/Ecommerce-app/products/${item.id}`;
+    let url = `https://my-json-server.typicode.com/raunak234362/data/products/${item.id}`;
     let result = customFetch(url, {
       body: {
         ...item,
@@ -76,12 +76,13 @@ export default function ProductItem({ item }) {
       products[index] = data;
 
       dispatchProduct(addproducts([...products]));
-      showToastMessage("Edit suceesful", "success");
+      showToastMessage("Edit suceesful", "successful");
     });
   }
   return (
     //   container
-    <div className="d-flex container-sm bg-white px-1 py-5 mt-4 flex-column flex-lg-row gap-3">
+    <div className="d-flex container-sm bg-white px-1 py-5 mt-4 mb-2 flex-column flex-lg-row gap-3 rounded-3">
+
       {/* left section  */}
       <ToastContainer />
       <div className="d-flex container-sm gap-5">
@@ -154,7 +155,7 @@ export default function ProductItem({ item }) {
             className="btn btn-primary"
             style={{
               width: "9rem",
-              backgroundColor: "var(--nav)",
+              backgroundColor: "rgb(0, 101, 163)",
             }}
             onClick={() => handleCart(item)}
           >

@@ -75,11 +75,11 @@ return (
 }
 const style = {
   nav: {
-    backgroundColor: "var(--nav)",
+    backgroundColor: "rgb(82, 100, 117)",
   },
   navHead: {
-    fontFamily: "var(--fontStyle)",
-    color: "#f47289",
+    fontFamily: "Angkor",
+    color: "rgb(0, 250, 237)",
   },
 };
 // #9375b7
