@@ -44,7 +44,7 @@ export default function ProductItem({ item }) {
   }
   // making delete request
   function handleDelelteProduct(item) {
-    let url = `https://my-json-server.typicode.com/jaiswalaryan/data/products/${item.id}`;
+    let url = `https://my-json-server.typicode.com/raunak234362/Ecommerce-app/products/${item.id}`;
     let result = customFetch(url, { method: "DELETE" });
 
     let index = products.indexOf(item);
@@ -59,7 +59,7 @@ export default function ProductItem({ item }) {
   }
   // making put request after click on save button of edit
   function handleSave(item) {
-    let url = `https://my-json-server.typicode.com/jaiswalaryan/data/products/${item.id}`;
+    let url = `https://my-json-server.typicode.com/raunak234362/Ecommerce-app/products/${item.id}`;
     let result = customFetch(url, {
       body: {
         ...item,

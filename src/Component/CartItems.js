@@ -11,6 +11,7 @@ const PriceDetail = styled.div`
   }
 `;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   let CartItem = useSelector((state) => state.cart);
   let totalItem = useSelector((state) => state.totalCart);

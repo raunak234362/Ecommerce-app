@@ -12,7 +12,7 @@ import { useEffect } from "react";
 function App() {
   let productDetailItem = useSelector((state) => state.itemToDisplay);
 
-  const url = "https://my-json-server.typicode.com/jaiswalaryan/data/db";
+  const url = "https://my-json-server.typicode.com/raunak234362/Ecommerce-app/products";
 
   const dispatch = useDispatch();
 
