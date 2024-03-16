@@ -15,7 +15,7 @@ width: 11rem;
     }
 }
 body{
-    background-color: rgb(114, 165, 193);
+    background-color: rgb(219, 233, 248);
 }
 @media only screen and (max-width:992px){
     #detailAddedImage{
